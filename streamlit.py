@@ -35,8 +35,7 @@ plt.xticks(rotation=90)
 
 st.pyplot(fig)
 
-genre = st.radio(
-    label = "POkemon turini tanlang",
+genre = st.radio(    label = "Pokemon turini tanlang",
     options = df['type_01'].unique().tolist(),
     index=None,
 )
@@ -53,7 +52,7 @@ else:
 
 with st.sidebar:
 
-    st.line_chart(df["type_01"])
+    st.line_chart(df["speed"])
 
     with st.echo():
         st.write("This code will be printed to the sidebar.")
