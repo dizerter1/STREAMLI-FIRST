@@ -36,12 +36,12 @@ plt.xticks(rotation=90)
 st.pyplot(fig)
 
 genre = st.radio(
-    label = "Tajriba Darajasini Tanlang",
+    label = "POkemon turini tanlang",
     options = df['type_01'].unique().tolist(),
     index=None,
 )
 
-if st.button("Jadvalni Ko'rsat"):
+if st.button("Shu turdagi pokemonlar"):
     # st.write("Why hello there")
     st.write("You selected:", genre)
 
